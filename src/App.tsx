@@ -9,12 +9,13 @@ export class App extends React.Component<State> {
     pressedKey: '',
   };
 
-  handlePress(event: KeyboardEvent) {
+  handleDocumentKeyPress(event: KeyboardEvent) {
     this.setState({ pressedKey: event.key });
+    console.log(event.key);
   }
 
   documentEventPress = (event: KeyboardEvent) => {
-    this.handlePress(event);
+    this.handleDocumentKeyPress(event);
   };
 
   componentDidMount(): void {
