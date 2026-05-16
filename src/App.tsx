@@ -11,7 +11,6 @@ export class App extends React.Component<State> {
 
   handleDocumentEventPress = (event: KeyboardEvent) => {
     this.setState({ pressedKey: event.key });
-    console.log(event.key);
   };
 
   componentDidMount(): void {
